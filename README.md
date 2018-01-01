@@ -15,11 +15,33 @@ For the creation of the base box used for this Vagrant setup the following is ne
 
 - Raspberry Pi Desktop - November 2017 release [iso from here](https://www.raspberrypi.org/downloads/raspberry-pi-desktop/)
 
-### Installation on a Mac
+
+## Installation of tools
+
+
+### Mac
 
 Installing VirtualBox and Vagrant on a Mac is fairly straight forward since they have packages to download, open and install.  
-Packer just needs to be unzipped and copied to /usr/local/bin (I would also recommend changing the owner of the file to root and 
-ensuring only user write permissions - avoids accidentally overwriting/deleting this in the future).
+
+
+### Linux
+
+<TBC>
+
+
+### Windows
+
+<TBC>
+
+
+## Installing VM
+
+Clone this git repository or simply copy the VagrantFile to a suitable location.  Using Terminal, Command Prompt or 
+similar command line run the following command
+
+```
+vagrant up
+```
 
  
 
