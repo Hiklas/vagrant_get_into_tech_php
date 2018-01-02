@@ -67,7 +67,15 @@ The virutal machine is setup to allow you to see certain locations from the host
 computer on which you're running vagrant/VirtualBox) within the guest (the Raspberry Pi desktop
 environment).  
 
+Specifically, in this case, the mount point /vagarnt_home is setup to point to the HOME directory 
+on the users host system, e.g. /Users/<user> on MacOS or c:\Users\<user> on Windows, etc.  The
+VagrantFile provisioning script also creates a directory, GitWork under HOME on the host and 
+links it to /home/pi/work.
 
+This means that any files saved to /home/pi/work will be written to the host directory and will 
+survive after the virtual machine is destroyed.
+
+NOTE: Students MUST save work to /home/pi/work to have to persist after the VM is destroyed.
 
 
 ## Base Box

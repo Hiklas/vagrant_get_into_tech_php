@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.network "private_network", ip: "192.168.33.10"
 
-  config.vm.synced_folder ENV["HOME"], "/vagrant_home", owner: "pi"
+  config.vm.synced_folder ENV["HOME"], "/vagrant_home", owner: "pi", group: "pi"
 
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI - since we're using this as our desktop 
@@ -31,6 +31,11 @@ Vagrant.configure("2") do |config|
 
     # Set the PI password to something simple
     echo "pi:wibble" | chpasswd
+
+    # Create a work directory
+    if [ ! -e /vagrant_home/GitWork ] ; then mkdir /vagrant_home/GitWork ; else echo "GitWork directort already there" ; fi
+    ln -s /vagrant_home/GitWork /home/pi/work
+    chown pi:pi -h /home/pi/work
 
     # Install packages
     apt-get update
