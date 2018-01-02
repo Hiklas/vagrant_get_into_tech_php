@@ -43,13 +43,44 @@ similar command line run the following command
 vagrant up
 ```
 
- 
+The above command will download the base box (this could take some time over a slow internet connection) and will 
+then start and configure the relevant packages.  Wait until the vagrant command has completed before attempting
+to use the virtual machine (the GUI/desktop will appear immediately but it would be advisable to wait while 
+packages are downloaded).
+
+You can now use the virutal machine as normal and can also shutdown/pause using the VirtualBox GUI.  Once 
+you are finished with the vagrant VM and wish to delete it use the following command
+
+```
+vagrant destroy
+```
+
+This will erase *everything* and you will need to run the "up" command again to recreate the virtual machine
+from scratch again.
+
+NOTE: Read the next section for tips on how to use the VM such that any work you do is preserved.
+
+
+## Using the VM
+
+The virutal machine is setup to allow you to see certain locations from the host (the physical 
+computer on which you're running vagrant/VirtualBox) within the guest (the Raspberry Pi desktop
+environment).  
+
+
+
 
 ## Base Box
 
 ### Initial Creation
 
-Creating the initial base box followed these steps
+Creating the initial base box followed these steps.  
+
+NOTE: ***You do NOT need to create the base box*** This work has already been carried out and the base box
+is already available on [vagrant cloud](https://app.vagrantup.com/hiklasltd/boxes/RPiDesktopNov2017).  
+This base box is free/open/public so should remain available, however if you depend on this heavily I
+would *strongly* suggest that you take a copy under your own account on Vagrant Cloud.
+
 
 * Start VirtualBox
 * For me I had to install the latest VirtualBox essentials

@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.network "private_network", ip: "192.168.33.10"
 
-  config.vm.synced_folder ENV["HOME"], "/vagrant_home"
+  config.vm.synced_folder ENV["HOME"], "/vagrant_home", owner: "pi"
 
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI - since we're using this as our desktop 
