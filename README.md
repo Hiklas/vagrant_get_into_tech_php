@@ -8,7 +8,8 @@ Rather than setup laptops with development environments (which could involve a w
 
 The following should be installed on the students laptops
 
-- VirtualBox - current version at time of writing 5.2.2 [download from here](https://www.virtualbox.org/wiki/Downloads)
+- VirtualBox - current version at time of writing 5.2.4 [download from here](https://www.virtualbox.org/wiki/Downloads)
+- VirtualBox Extension Pack - current version is also available on the [download page](https://www.virtualbox.org/wiki/Downloads)
 - Vagrant - current version is 2.0.1 [download here](https://www.vagrantup.com/downloads.html)
 
 For the creation of the base box used for this Vagrant setup the following is needed
@@ -22,16 +23,57 @@ For the creation of the base box used for this Vagrant setup the following is ne
 ### Mac
 
 Installing VirtualBox and Vagrant on a Mac is fairly straight forward since they have packages to download, open and install.  
+Follow these steps
 
+* Download the VirtualBox package, e.g. for [version 5.2.4](http://download.virtualbox.org/virtualbox/5.2.4/VirtualBox-5.2.4-119785-OSX.dmg)
+* Once downloaded, open the archive (double-click on it) 
+* Double click on the Package and follow the prompts to install the package
+* Download the VirtualBox Extensions Pack, e.g. [version 5.2.2](http://download.virtualbox.org/virtualbox/5.2.2/Oracle_VM_VirtualBox_Extension_Pack-5.2.2-119230.vbox-extpack)
+* Run the VirtualBox application (the icon will be available under the Mac Launcher)
+* On the menu select VirtualBox -> Preferences and find the Extensions tab
+* Add a new extension (the icon with the "+" on the right hand side of the dialog)
+* Navigate to the downloaded extension pack to add it
 
-### Linux
+For Vagrant 
 
-<TBC>
+* Download the package, e.g. [version 2.0.1](https://releases.hashicorp.com/vagrant/2.0.1/vagrant_2.0.1_x86_64.dmg)
+* Once downloaded, open the archive (double-click on it)
+* Double-click on the package and follow instructions to install
+
+At this point it might be a good idea to restart the Mac just for the sake of paranoia to make sure everything has installed cleanly.
 
 
 ### Windows
 
-<TBC>
+* Download the VirtualBox package, e.g. for [version 5.2.4](http://download.virtualbox.org/virtualbox/5.2.4/VirtualBox-5.2.4-119785-Win.exe)
+* Once downloaded, run the installer (double-click on it)
+* Accept the default installation components, location and options
+* Accept the installation of the Oracle Network device
+* Finish the installation but ensure that the box labelled "Start after installation" is *unticked*
+* Note that installation will require admin rights
+* Download the VirtualBox Extensions Pack, e.g. [version 5.2.4](http://download.virtualbox.org/virtualbox/5.2.4/Oracle_VM_VirtualBox_Extension_Pack-5.2.4-119.vbox-extpack)
+* Run the VirtualBox application *as administrator* (the icon will be available under the Windows Start Button and you can right-click to access the "Run as administrator" option)
+* On the application menu select File -> Preferences and find the Extensions tab
+* Add a new extension (the icon with the "+" on the right hand side of the dialog)
+* Navigate to the downloaded extension pack to add it
+* Accept the dialog that appears by clicking "Install"
+
+
+For Vagrant
+
+* Download the MSI installer, e.g. [version 2.0.1](https://releases.hashicorp.com/vagrant/2.0.1/vagrant_2.0.1_x86_64.msi)
+* Note: For Windows there is the option of 64bit or 32bit Vagrant packages, you can find out which you need by looking at "About Your PC" 
+* Most modern laptops are very likely to be 64bit 
+* Once downloaded, double-click and follow the instructions to install in the default location
+
+At this point it might be a good idea to restart the Laptop just for the sake of paranoia to make sure everything has installed cleanly.
+
+
+### Linux
+
+*Needs to be added*
+
+
 
 
 ## Installing VM
