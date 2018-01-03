@@ -65,8 +65,7 @@ For Vagrant
 * Note: For Windows there is the option of 64bit or 32bit Vagrant packages, you can find out which you need by looking at "About Your PC" 
 * Most modern laptops are very likely to be 64bit 
 * Once downloaded, double-click and follow the instructions to install in the default location
-
-At this point it might be a good idea to restart the Laptop just for the sake of paranoia to make sure everything has installed cleanly.
+* The installer will ask to reboot the machine once complete, click accept since a restart would make sure everything is cleanly installed
 
 
 ### Linux
