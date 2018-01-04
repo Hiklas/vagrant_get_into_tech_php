@@ -28,7 +28,7 @@ Follow these steps
 * Download the VirtualBox package, e.g. for [version 5.2.4](http://download.virtualbox.org/virtualbox/5.2.4/VirtualBox-5.2.4-119785-OSX.dmg)
 * Once downloaded, open the archive (double-click on it) 
 * Double click on the Package and follow the prompts to install the package
-* Download the VirtualBox Extensions Pack, e.g. [version 5.2.2](http://download.virtualbox.org/virtualbox/5.2.2/Oracle_VM_VirtualBox_Extension_Pack-5.2.2-119230.vbox-extpack)
+* Download the VirtualBox Extensions Pack, e.g. [version 5.2.4](http://download.virtualbox.org/virtualbox/5.2.4/Oracle_VM_VirtualBox_Extension_Pack-5.2.4-119785.vbox-extpack)
 * Run the VirtualBox application (the icon will be available under the Mac Launcher)
 * On the menu select VirtualBox -> Preferences and find the Extensions tab
 * Add a new extension (the icon with the "+" on the right hand side of the dialog)
@@ -77,8 +77,13 @@ For Vagrant
 
 ## Installing VM
 
-Clone this git repository or simply copy the VagrantFile to a suitable location.  Using Terminal, Command Prompt or 
-similar command line run the following command
+Clone this git repository or simply copy the VagrantFile to a suitable location.
+If you go to the [github repo](https://github.com/Hiklas/vagrant_get_into_tech_php) and
+click on the "Clone or Download" button there is an option to download a Zip file which 
+is probably the easiest option.
+
+Once you have the repo contents downloaded and copied/unzipped somewhere, use Terminal (Mac), 
+Command Prompt (Windows) or similar command line run the following command
 
 ```
 vagrant up
