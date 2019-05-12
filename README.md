@@ -51,7 +51,7 @@ At this point it might be a good idea to restart the Mac just for the sake of pa
 * Accept the installation of the Oracle Network device
 * Finish the installation but ensure that the box labelled "Start after installation" is *unticked*
 * Note that installation will require admin rights
-* Download the VirtualBox Extensions Pack, e.g. [version 5.2.4](http://download.virtualbox.org/virtualbox/5.2.4/Oracle_VM_VirtualBox_Extension_Pack-5.2.4-119.vbox-extpack)
+* Download the VirtualBox Extensions Pack, e.g. [version 5.2.4](http://download.virtualbox.org/virtualbox/5.2.4/Oracle_VM_VirtualBox_Extension_Pack-5.2.4-119785.vbox-extpack)
 * Run the VirtualBox application *as administrator* (the icon will be available under the Windows Start Button and you can right-click to access the "Run as administrator" option)
 * On the application menu select File -> Preferences and find the Extensions tab
 * Add a new extension (the icon with the "+" on the right hand side of the dialog)
